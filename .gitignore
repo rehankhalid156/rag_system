@@ -1,0 +1,18 @@
+# Python environment (never commit this — it's regenerated from requirements.txt)
+venv/
+__pycache__/
+*.pyc
+
+# Raw downloaded dataset (867MB — too big for git, and reproducible via build_index.py)
+data/raw_argsme/
+
+# Generated FAISS index (too large for GitHub's 100MB file limit — anyone
+# cloning this repo should run `python app/build_index.py` to regenerate it)
+data/ibm_argument_index.faiss
+
+# Jupyter checkpoints, if any notebooks are ever added
+.ipynb_checkpoints/
+
+# OS junk files
+.DS_Store
+Thumbs.db
